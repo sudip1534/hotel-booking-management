@@ -12,13 +12,13 @@ public class Customer {
     public Customer(){
 
         Scanner choice=new Scanner(System.in);
-        System.out.println("Enter your FirstName :\n");
+        System.out.println("Enter your FirstName :");
         FirstName=choice.nextLine();
-        System.out.println("Enter your Email :\n");
+        System.out.println("Enter your Email :");
         Email=choice.nextLine();
-        System.out.println("Enter your Address :\n");
+        System.out.println("Enter your Address :");
         Address=choice.nextLine();
-        System.out.println("Enter your Phone_Number :\n");
+        System.out.println("Enter your Phone_Number :");
         Phone_number=choice.nextLine();
 
 }
@@ -26,9 +26,7 @@ public class Customer {
     public String getFirstName() {
         return FirstName;
     }
-    public String getPhone_number() {
-        return Phone_number;
-    }
+
 
     public String getEmail(){
         return Email;
@@ -36,6 +34,10 @@ public class Customer {
 
     public String getAddress() {
         return Address;
+    }
+
+    public String getPhone_number() {
+        return Phone_number;
     }
 
 
