@@ -27,6 +27,7 @@ public class Main {
             int fileValue=1;
             int myChoice = choice.nextInt();       // input value for option choice
             if (myChoice == 1)
+
             {
 
                 double randomnumber = Math.random();
@@ -51,9 +52,9 @@ public class Main {
                 JsonObject jsonObject= new JsonObject();
 
 
-                String fileName = "ACC_" + randomnumber + ".json";
+                String fileJson = "ACC_" + randomnumber + ".json";
 
-                File file = new File("D:\\Techpro Solutions\\New folder\\Hotel_Management_Project" + fileName);
+                File file = new File("D:\\Techpro Solutions\\New folder\\Hotel_Management_Project" + fileJson);
                 jsonObject.put("First_Name", customer.getFirstName());
                 jsonObject.put("Email", customer.getEmail());
                 jsonObject.put("Address", customer.getAddress());
@@ -71,9 +72,6 @@ public class Main {
                 }
                 System.out.println("JSON file created: "+jsonObject);
             }
-
-
-
 
 
 
