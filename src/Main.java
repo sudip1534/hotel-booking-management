@@ -11,7 +11,8 @@ public class Main {
                     "\t\t1. Register Account\n" +
                     "\t\t2. Book Reservation\n" +
                     "\t\t3. Generate Bill\n" +
-                    "\t\t4. Feedback\n");
+                    "\t\t4. Feedback\n" +
+                    "\t\t5. Exit\n");
 
         }
 
@@ -30,11 +31,16 @@ public class Main {
             displayMenu();
 
             int myChoice = choice.nextInt();       // input value for option choice
-            if (myChoice == 1) {
+            if (myChoice == 1)
+            {
                 util.registration();
             }
             else if (myChoice == 2)
+            {
                 System.out.println("2. Book Reservation");
+                util.bookReservation();
+            }
+
             else if (myChoice == 3)
                 System.out.println("3. Generate Bill");
             else if (myChoice == 4)
