@@ -39,6 +39,10 @@ public class Main {
                 System.out.println("3. Generate Bill");
             else if (myChoice == 4)
                 System.out.println("4. Feedback");
+            else if(myChoice==5) {
+                System.out.println("Closed the program");
+                return;
+                }
             else
                 System.out.println("Please enter proper choice:");
         }

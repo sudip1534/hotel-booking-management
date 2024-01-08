@@ -65,11 +65,13 @@ public class Customer {
 
     }
 
-
+    int folderNum=1;
     //WriteInfo() function will create a folder and write the given data in a file and save the file in the folder.
     public void WriteInfo(){
         ///in folder path put your path where you want to create your folder
         String folderPath = "D:\\Techpro Solutions\\New folder\\Hotel_Management_Project\\src\\New Customer";
+        folderNum=folderNum+1;
+
         File folder=new File(folderPath);
         if(!folder.exists()){
             boolean create=folder.mkdir();
