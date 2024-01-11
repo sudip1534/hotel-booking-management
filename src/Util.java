@@ -13,7 +13,7 @@ public class Util {
         System.out.print("Please enter your Address : ");
         String address=input.nextLine();
         System.out.print("Please enter your phone number :");
-        String phone_number= input.next();
+        String phone_number= input.nextLine();
         //calling the class UserRegistration constructor.
         Customer userinfo=new Customer(firstName,email,address,phone_number);
         userinfo.WriteInfo();
@@ -21,12 +21,12 @@ public class Util {
     }
     public void bookReservation(){
 
-        System.out.println("Do you already completed your registration?(Y/N)");
-        String Value= input.nextLine();
-        if(Value=="Y"){
+        System.out.println("Do you already completed your registration?(Yes/No)");
+        String Value= input.next();
+        if(Value=="Yes"){
 
             System.out.println("Enter your Account Number");
-            String Acc_Num = input.nextLine();
+            Double Acc_Num = input.nextDouble();
          Reservation reservation=new Reservation(Acc_Num);
 
         }

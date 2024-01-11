@@ -3,11 +3,13 @@ import com.github.cliftonlabs.json_simple.JsonObject;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class Customer {
 
 
     private String FirstName;
+    ArrayList<Double> Acc_Num=new ArrayList<>();
     private String Email;
     private String Address;
     private String Phone_number;
@@ -21,6 +23,7 @@ public class Customer {
         Email = email;
         Address = address;
         Phone_number = phone_number;
+
     }
 
     public String getFirstName() {
@@ -83,11 +86,13 @@ public class Customer {
             System.out.println("The folder already exists.");
         }
 
-        //generateRandomNumber() method will return rendom number.
+        //Math.random() method will return random number.
         double randomNumber=Math.random();
         //create file name
         String filename="ACC_"+randomNumber+".json";
-
+        Acc_Num.add(randomNumber);
+       /* for (String number : Acc_Number) {
+            if (number == */
         //Create a JSONObject with  data
         JsonObject jsonobject=new JsonObject();
         jsonobject.put("Name",getFirstName());
@@ -101,4 +106,6 @@ public class Customer {
 
 
     }
+
+
 }
